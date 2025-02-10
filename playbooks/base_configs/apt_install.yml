@@ -1,0 +1,10 @@
+- name: Install some pkg
+  hosts: test_debian
+  tasks: 
+    - name: Install pkg
+      ansible.builtin.apt:
+        pkg:
+        - htop
+        - nginx
+
+
