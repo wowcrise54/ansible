@@ -1,5 +1,5 @@
 - name: Install some pkg
-  hosts: test
+  hosts: test_debian
   tasks: 
     - name: Install pkg
       ansible.builtin.apt:
