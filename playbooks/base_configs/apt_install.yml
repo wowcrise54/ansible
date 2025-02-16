@@ -1,11 +1,9 @@
 - name: Install some pkg
   hosts: test_debian
-  become: yes
-  tasks: 
+  become: true
+  tasks:
     - name: Install pkg
       ansible.builtin.apt:
         pkg:
-        - htop
-        - nginx
-
-
+          - htop
+          - nginx
